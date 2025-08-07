@@ -1,0 +1,19 @@
+@MinimalApiDemo_HostAddress = http://localhost:5129
+
+POST {{MinimalApiDemo_HostAddress}}/createUser/
+Accept: application/json
+
+###
+
+POST {{MinimalApiDemo_HostAddress}}/user/
+Accept: application/json
+
+###
+
+POST {{MinimalApiDemo_HostAddress}}/beer/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Heineken"
+}
