@@ -27,7 +27,7 @@ app.MapPost("/beer", (HttpContext context) =>
             return Results.BadRequest("Invalid beer data.");
         }
 
-        Thread.Sleep(3000); // Simulate some processing delay
+        Thread.Sleep(3000);
 
         var beer = new Beer(Guid.NewGuid(), requestBody.Name);
 
@@ -40,6 +40,23 @@ app.MapPost("/beer", (HttpContext context) =>
 
 });
 
+app.MapPost("/wine", async (HttpContext context) =>
+{
+        var requestBody = await context.Request.ReadFromJsonAsync<Wine>();
+        if (requestBody == null)
+        {
+            return Results.BadRequest("Invalid wine data.");
+        }
+
+        await Task.Delay(3000);
+
+        var wine = new Wine(Guid.NewGuid(), requestBody.Name);
+
+        return Results.Created($"/wine/{wine.id}", wine);
+});
+
 app.Run();
 
 record Beer(Guid id, string Name);
+
+record Wine(Guid id, string Name);

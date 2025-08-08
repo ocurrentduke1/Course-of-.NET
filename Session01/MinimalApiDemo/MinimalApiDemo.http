@@ -17,3 +17,13 @@ Content-Type: application/json
 {
   "name": "Heineken"
 }
+
+###
+
+POST {{MinimalApiDemo_HostAddress}}/wine/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "name": "Chardonnay"
+}
