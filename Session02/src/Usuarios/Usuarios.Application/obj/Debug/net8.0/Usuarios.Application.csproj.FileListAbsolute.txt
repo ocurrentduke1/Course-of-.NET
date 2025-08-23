@@ -10,3 +10,7 @@ C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\
 C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\obj\Debug\net8.0\refint\Usuarios.Application.dll
 C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\obj\Debug\net8.0\Usuarios.Application.pdb
 C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\obj\Debug\net8.0\ref\Usuarios.Application.dll
+C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\bin\Debug\net8.0\Usuarios.Domain.dll
+C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\bin\Debug\net8.0\Usuarios.Domain.pdb
+C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\obj\Debug\net8.0\Usuarios.Application.csproj.AssemblyReference.cache
+C:\Users\vdavi\Desktop\DotNETCourse\Session02\src\Usuarios\Usuarios.Application\obj\Debug\net8.0\Usuarios.A0FB5267.Up2Date

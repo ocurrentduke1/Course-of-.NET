@@ -6,7 +6,7 @@ using Usuarios.Domain.Usuarios;
 
 namespace Usuarios.Application.Usuarios.CrearUsuario;
 
-internal sealed class CrearUsuarioHandler : ICommandHandler<CrearUsuarioCommand, Guid>
+internal sealed class CrearUsuarioCommandHandler : ICommandHandler<CrearUsuarioCommand, Guid>
 {
     private readonly IUsuarioRepository _usuarioRepository;
     private readonly IRolRepository _rolRepository;
@@ -14,7 +14,7 @@ internal sealed class CrearUsuarioHandler : ICommandHandler<CrearUsuarioCommand,
     private readonly NombreUsuarioService _nombreUsuarioService;
     private readonly IDateTimeProvider _dateTimeProvider;
 
-    public CrearUsuarioHandler(
+    public CrearUsuarioCommandHandler(
         IUsuarioRepository usuarioRepository,
         IRolRepository rolRepository,
         IUnitOfWork unitOfWork,
