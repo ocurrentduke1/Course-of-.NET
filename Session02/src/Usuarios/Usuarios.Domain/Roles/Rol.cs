@@ -4,14 +4,16 @@ namespace Usuarios.Domain.Roles;
 
 public class Rol : Entity
 {
-    public string Nombre { get; private set; }
-    public string Descripcion { get; private set; }
+    public string? Nombre { get; private set; }
+    public string? Descripcion { get; private set; }
 
     private Rol(Guid id, string nombre, string descripcion) : base(id)
     {
         Nombre = nombre;
         Descripcion = descripcion;
     }
+
+    private Rol() {}
 
     public static Result<Rol> Create(string nombre, string descripcion)
     {

@@ -24,6 +24,7 @@ public class Usuario : Entity
     public Guid RolId { get; private set; }
     public Rol? Rol { get; private set; }
 
+    private Usuario() {}
     private Usuario(
         Guid id,
         string? nombrePersona,
